@@ -1,6 +1,31 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/mileke/puppy"
+)
+
+func main() {
+	s1 := puppy.Bark()
+	s2 := puppy.Barks()
+	s3 := puppy.BigBark()
+	s4 := puppy.BigBarks()
+
+	fmt.Println(s1)
+	fmt.Println(s2)
+	fmt.Println(s3)
+	fmt.Println(s4)
+
+	// fmt.Println(puppy.Bark())
+	// fmt.Println(puppy.Barks())
+}
+
+/*func main() {
+
+	fmt.Println(puppy.Bark())
+	fmt.Println(puppy.Barks())
+}*/
 
 /*func main() {
 	var name string
@@ -42,10 +67,11 @@ import "fmt"
 }
 */
 
-func main() {
+/*func main() {
 	var a int8 = 127
 	var b uint8 = 255
 
 	fmt.Printf("The value of a is %d and type is %T\n", a, a)
 	fmt.Printf("The value of b is %d and type is %T\n", b, b)
 }
+*/
