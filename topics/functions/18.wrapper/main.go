@@ -1,0 +1,25 @@
+package main
+
+import (
+	"fmt"
+	"log"
+	"os"
+)
+
+func main() {
+	xb, err := readFile("poem.txt")
+	if err != nil {
+		log.Fatalf("error in main in readfile: %s", err)
+	}
+	fmt.Println(xb)
+	fmt.Println(string(xb))
+}
+
+func readFile(fileName string) ([]byte, error) {
+	xb, err := os.ReadFile(fileName)
+
+	if err != nil {
+		return nil, fmt.Errorf("There was an error in read file: %s", err)
+	}
+	return xb, nil
+}
