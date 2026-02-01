@@ -1,9 +1,14 @@
 package main
 
+import "fmt"
+
 func main() {
-	rand()
+	y := outer()
+	fmt.Println(y())
 }
 
-func rand() {
-
+func outer() func() int {
+	return func() int {
+		return 42
+	}
 }

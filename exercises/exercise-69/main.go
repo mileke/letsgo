@@ -1,9 +1,14 @@
 package main
 
+import (
+	"fmt"
+	"math/rand"
+)
+
 func main() {
-	rand()
+	a()
 }
 
-func rand() {
-
+var a = func() {
+	fmt.Println(rand.Intn(7))
 }

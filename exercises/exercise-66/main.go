@@ -1,9 +1,13 @@
 package main
 
+import "math/rand"
+
 func main() {
-	rand()
+	Rando(40)
 }
 
-func rand() {
-
+// Rando is a function that generates random numbers
+func Rando(a int) int {
+	x := rand.Intn(a)
+	return x
 }
