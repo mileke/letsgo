@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func addOne(v int) int {
-	v + 1
+	return v + 1
 }
 
 func pointerAddOne(v *int) {
